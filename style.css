@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --sucess-color: rgb(4, 75, 4);
+    --error-color: rgb(255, 68, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( to top left, rgba(245, 99, 14, 0.3), rgba(82, 243, 255, 0.4)), url("./pic9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.container {
+    background-color: rgb(255, 242, 242);
+    border-radius: 5px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.9);
+    width: 400px;
+    border-radius: 10px 8px 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.form {
+    padding: 30px 40px
+}
+
+.form-control {
+    margin-bottom: 7px;
+    padding-bottom: 15px;
+    position: relative;
+    text-overflow: initial;
+}
+
+.form-control label {
+    color: rgb(112, 110, 110);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 1px solid #222627;
+    border-radius: 7px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    padding: 9px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--sucess-color);
+    border: 3px solid rgb(4, 75, 4);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+    border: 3px solid rgb(255, 68, 0);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: rgb(195, 5, 30);
+    border: 2px solid rgb(195, 5, 30);
+    border-radius: 21px;
+    text-shadow: black;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 17.5px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form button:hover {
+    background-color: rgb(195, 5, 5);
+}
